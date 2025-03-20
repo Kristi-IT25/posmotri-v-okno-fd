@@ -156,8 +156,6 @@ ol {
   inline-size: 212px;
 }
 
-.search-form__checkbox {}
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -252,19 +250,19 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__list-container {
+  position: relative;
   width: 399px;
   height: 298px;
-  position: relative;
-  overflow-y: auto; /*Оставляем вертикальный скролл, убираем нижний*/
-  overflow-x: hidden; 
+  overflow-x: hidden;
+  overflow-y: auto; /*Оставляем вертикальный скролл, убираем нижний*/ 
 }
 
 .content__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding-top: 2px;
-  position: relative;
   inline-size: 390px;
 }
 
@@ -309,12 +307,12 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__video-card-description-container {
-  flex-grow: 1;
-  overflow: hidden;
-  block-size: 103px;
   display: flex;
   flex-direction: column;
-  gap: 5px; 
+  flex-grow: 1;
+  gap: 5px;
+  overflow: hidden;
+  block-size: 103px; 
 }
 
 .content__video-card-title {
@@ -342,9 +340,9 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   display: block;
   flex-shrink: 0;
   width: 194px;
-  block-size: 103px;
   object-fit: cover;
   object-position: center;
+  block-size: 103px;
 }
 
 .more-button {
