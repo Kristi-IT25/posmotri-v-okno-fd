@@ -111,9 +111,12 @@ ol {
 }
 
 .search-form__label:hover {
+  cursor: pointer;
+}
+
+.search-form__label:hover .search-form__label-text { /*Подчеркивание только у чекбоксов*/
   text-decoration: underline;
   text-underline-position: under;  /*отодвинуть подчеркивание*/
-  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
