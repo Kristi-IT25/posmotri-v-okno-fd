@@ -253,8 +253,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   position: relative;
   width: 399px;
   height: 298px;
-  overflow-x: hidden;
-  overflow-y: auto; /*Оставляем вертикальный скролл, убираем нижний*/ 
+  overflow: auto;
 }
 
 .content__list {
